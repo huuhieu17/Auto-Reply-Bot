@@ -1,0 +1,40 @@
+<%- include('layout/header') %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 my-3">
+                <h6></h6>
+            </div>
+
+            <div class="col-lg-6 mx-auto mt-4">
+                <div class="card shadow">
+                    <div class="card-header bg-primary">
+                        <h3 class="text-light my-2">Add new question</h3>
+                    </div>
+
+                    <div class="card-body p-4">
+                        <form action="/add" method="post" id="add-form">
+
+                            <div class="mb-3">
+                                <label for="question">Question</label>
+                                <input type="text" name="question" class="form-control form-control-lg"
+                                    placeholder="Enter question" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="answer">Answer</label>
+                                <input type="text" name="answer" class="form-control form-control-lg"
+                                    placeholder="Enter Answer" required />
+                            </div>
+                            <div class="mb-3 d-grid gap-2">
+                                <!-- <button class="btn btn-primary" type="button">Button</button> -->
+                                <input type="submit" value="Add question" class="btn btn-primary btn-lg" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <%- include('layout/footer') %>
